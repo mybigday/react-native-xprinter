@@ -1,0 +1,19 @@
+{
+  "name": "react-native-xprinter",
+  "version": "0.0.1",
+  "description": "This is an android xprinter driver.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "android",
+    "xprinter",
+    "usb",
+    "printer"
+  ],
+  "author": "Pepper Yen <pepper.yen@gmail.com>",
+  "license": "MIT"
+}
