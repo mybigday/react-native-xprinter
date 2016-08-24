@@ -16,7 +16,8 @@ First of all you need get the bluetooth device list, and select one to use.
 
 ```js
 import { NativeModules } from 'react-native';
-let RNXprinter = NativeModules.RNXprinter;
+import RNXprinter from 'react-native-xprinter';
+RNXprinter.initialize();
 
 let printerList = await RNXprinter.getDeviceList();
 await RNXprinter.selectDevice(printerList[0].address);
@@ -65,6 +66,7 @@ await RNXprinter.print();
 ## Roadmap
 
 - [x] Android support
+- [x] Save default printer
 - [ ] Test coverage
 - [ ] Download image to printer
 - [ ] USB support
