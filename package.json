@@ -1,6 +1,6 @@
 {
   "name": "react-native-xprinter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is an android xprinter driver.",
   "main": "index.js",
   "scripts": {
