@@ -19,8 +19,12 @@ import { NativeModules } from 'react-native';
 import RNXprinter from 'react-native-xprinter';
 RNXprinter.initialize();
 
+// Select a printer to use
 let printerList = await RNXprinter.getDeviceList();
 await RNXprinter.selectDevice(printerList[0].address);
+
+// Or you can use printer pick panel
+RNXprinter.pickPrinter();
 
 ```
 
@@ -68,6 +72,7 @@ await RNXprinter.print();
 - [x] Android support
 - [x] Save default printer
 - [ ] Test coverage
+- [x] Printer select panel
 - [ ] Download image to printer
 - [ ] USB support
 
